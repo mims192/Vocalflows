@@ -113,19 +113,6 @@ Visit **http://localhost:5173** in your browser.
 
 > **Allow microphone access** when prompted by the browser.
 
----
-
-## 🖥 Running as Windows Tray App (Electron)
-
-```bash
-cd electron
-npm install
-npm run dev
-```
-
-This opens VocalFlow as a native Windows app with a system tray icon.
-
----
 
 ##  Configuration
 
