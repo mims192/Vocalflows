@@ -1,0 +1,32 @@
+# Dependencies 
+**/node_modules/
+
+# Build outputs
+frontend/dist/
+frontend/build/
+electron/dist/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Electron builder cache
+electron/.cache/
+.env
