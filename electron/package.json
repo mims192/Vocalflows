@@ -1,0 +1,26 @@
+{
+  "name": "vocalflows",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "build-frontend": "cd ../frontend && npm run build",
+    "pack": "npm run build-frontend && electron-builder --win"
+  },
+  "build": {
+    "appId": "com.vocalflows.app",
+    "productName": "VocalFlows",
+    "win": {
+      "target": "nsis",
+      "arch": ["x64"]
+    },
+    "files": ["main.js"],
+    "extraResources": [
+      { "from": "../frontend/dist", "to": "frontend/dist" }
+    ]
+  },
+  "devDependencies": {
+    "electron": "^41.2.0",
+    "electron-builder": "^26.8.1"
+  }
+}

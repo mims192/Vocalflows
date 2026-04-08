@@ -7,7 +7,8 @@ export function useWebSocket({ onTranscript, onError }) {
   const [connected, setConnected] = useState(false);
 
   useEffect(() => {
-    const socket = io("http://localhost:3001", { transports: ["websocket"] });
+    const socket = io("https://render-apis-qg52.onrender.com", { transports: ["websocket"],withCredentials: true,
+ });
     socketRef.current = socket;
 
     socket.on("connect", () => setConnected(true));
