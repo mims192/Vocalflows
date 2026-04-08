@@ -21,7 +21,7 @@ const io = new Server(server, {
 
 require("./services/deepgramService")(io);
 
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`VocalFlow backend running at http://localhost:${PORT}`);
   console.log(`   WebSocket ready for audio streaming`);
 });

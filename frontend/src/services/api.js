@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://render-apis-qg52.onrender.com/api",
+  //baseURL: "https://render-apis-qg52.onrender.com/api",
+  baseURL: "https://render-apis-production.up.railway.app/api",
   timeout: 10000,
 });
 
